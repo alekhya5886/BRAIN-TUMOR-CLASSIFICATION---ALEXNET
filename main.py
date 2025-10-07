@@ -21,7 +21,7 @@ st.set_page_config(
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Set up Google Gemini-Pro AI model
-gen_ai.configure(api_key="AIzaSyDQEEm4M753J6NBAE7_H-DiLU3jCaTcdwo")
+gen_ai.configure(api_key="#apikey")
 chat_model = gen_ai.GenerativeModel('gemini-1.5-pro')
 
 # Set up the brain tumor classification model
@@ -177,3 +177,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
